@@ -1,6 +1,7 @@
 defmodule Princess.Options.PDF.Encryption do
   use Ecto.Schema
 
+  @primary_key false
   embedded_schema do
     # 40, 128
     field(:key_bits, :integer)

@@ -2,6 +2,7 @@ defmodule Princess.Options.PDF do
   use Ecto.Schema
   alias Princess.Ecto.URL
 
+  @primary_key false
   embedded_schema do
     # auto, use_true_black, use_rich_black
     field(:color_options, :string)
