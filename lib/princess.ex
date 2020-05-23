@@ -12,7 +12,6 @@ defmodule Princess do
       :world
 
   """
-  def hello do
-    :world
+  def connect do
   end
 end

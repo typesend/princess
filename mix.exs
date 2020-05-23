@@ -27,7 +27,10 @@ defmodule Princess.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ex_doc, "~> 0.22", only: :dev, runtime: false}
+      {:ecto, "~> 3.4"},
+      {:jason, "~> 1.2"},
+      {:ex_doc, "~> 0.22", only: :dev, runtime: false},
+      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false}
     ]
   end
 
