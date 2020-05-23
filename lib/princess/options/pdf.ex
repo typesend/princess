@@ -3,23 +3,23 @@ defmodule Princess.Options.PDF do
   alias Princess.Ecto.URL
 
   embedded_schema do
-    # auto, use-true-black, use-rich-black
-    field(:"color-options", :string)
-    field(:"embed-fonts", :boolean)
-    field(:"subset-fonts", :boolean)
-    field(:"artificial-fonts", :boolean)
-    field(:"force-identity-encoding", :boolean)
+    # auto, use_true_black, use_rich_black
+    field(:color_options, :string)
+    field(:embed_fonts, :boolean)
+    field(:subset_fonts, :boolean)
+    field(:artificial_fonts, :boolean)
+    field(:force_identity_encoding, :boolean)
     field(:compress, :boolean)
     embeds_one(:encrypt, Encryption)
-    field(:"pdf-profile", :string)
-    field(:"pdf-output-intent", URL)
-    field(:"fallback-cmyk-profile", URL)
+    field(:pdf_profile, :string)
+    field(:pdf_output_intent, URL)
+    field(:fallback_cmyk_profile, URL)
     # none, full
-    field(:"color-conversion", :string)
-    field(:"pdf-lang", :string)
-    field(:"pdf-xmp", URL)
+    field(:color_conversion, :string)
+    field(:pdf_lang, :string)
+    field(:pdf_xmp, URL)
     # auto, true, false
-    field(:"tagged-pdf", :string)
+    field(:tagged_pdf, :string)
     embeds_many(:attach, Attachments)
   end
 end

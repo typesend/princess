@@ -3,12 +3,12 @@ defmodule Princess.Options.PDF.Encryption do
 
   embedded_schema do
     # 40, 128
-    field(:"key-bits", :integer)
-    field(:"user-password", :string)
-    field(:"owner-password", :string)
-    field(:"disallow-print", :boolean)
-    field(:"disallow-modify", :boolean)
-    field(:"disallow-copy", :boolean)
-    field(:"disallow-annotate", :boolean)
+    field(:key_bits, :integer)
+    field(:user_password, :string)
+    field(:owner_password, :string)
+    field(:disallow_print, :boolean)
+    field(:disallow_modify, :boolean)
+    field(:disallow_copy, :boolean)
+    field(:disallow_annotate, :boolean)
   end
 end

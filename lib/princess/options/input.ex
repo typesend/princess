@@ -8,10 +8,10 @@ defmodule Princess.Options.Input do
     field(:media, :string)
     field(:styles, {:array, :string})
     field(:scripts, {:array, :string})
-    field(:"default-style", :boolean)
-    field(:"author-style", :boolean)
+    field(:default_style, :boolean)
+    field(:author_style, :boolean)
     field(:javascript, :boolean)
     field(:xinclude, :boolean)
-    field(:"xml-external-entities", :boolean)
+    field(:xml_external_entities, :boolean)
   end
 end
