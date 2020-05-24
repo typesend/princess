@@ -39,7 +39,8 @@ defmodule Princess.Adapter do
 
     case chunk do
       %{tag: "ver", data: data} ->
-        Map.put(state, "ver", data)
+        "Prince " <> version = data
+        Map.put(state, "ver", version)
 
       %{tag: "pdf", data: data} ->
         Map.put(state, "pdf", data)

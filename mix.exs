@@ -30,7 +30,8 @@ defmodule Princess.MixProject do
       {:ecto, "~> 3.4"},
       {:jason, "~> 1.2"},
       {:ex_doc, "~> 0.22", only: :dev, runtime: false},
-      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false}
+      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
+      {:stream_data, "~> 0.5.0", only: [:dev, :test], runtime: true}
     ]
   end
 
